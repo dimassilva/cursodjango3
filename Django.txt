@@ -1,0 +1,90 @@
+= Instalar Python com Pip
+https://www.python.org/downloads/
+
+= Instalar Setup Tools
+https://bootstrap.pypa.io/ez_setup.py
+python ez_setup.py
+
+= Atualizar Pip
+python -m pip install --upgrade pip
+Remover pasta: rmdir /s
+
+= Instalar virtualenv
+pip install virtualenv
+
+= Criar Ambiente virtual
+virtualenv venv -p c:\Python38\
+python -m venv Curso
+
+= Ativar Ambiente virtual
+CAMINHO DO PROJETO\Curso\Scripts\activate.bat
+
+= Desativar Ambiente Virtual
+CAMINHO DO PROJETO\Curso\Scripts\deactivate.bat
+
+++ NO AMBIENTE VIRTUAL ++
+= Instalar Django
+pip install django
+
+Startar Um projeto
+= Curso\django-admin.py startproject simplemooc
+
+Iniciar servidor
+= (Curso) C:\Users\DIGITAL\Desktop\Curso\simplemooc>manage.py runserver
+
+Criar aplicação
+= (Curso) C:\Users\DIGITAL\Desktop\Curso\simplemooc>python manage.py startapp core
+
+============================================================================================
+Criar virtualenv
+= C:\Users\DIGITAL\Documents\curso>python  -m venv venv
+
+Ativar virtualenv
+C:\Users\DIGITAL\Documents\curso\venv\Scripts>activate
+
+Instalar Django
+= (venv) C:\Users\DIGITAL\Documents\curso\venv\Scripts>pip install --pre django
+
+Atualizar pip
+= (venv) C:\Users\DIGITAL\Documents\curso\venv\Scripts>python -m pip install --upgrade pip
+
+Criar projeto
+= (venv) C:\Users\DIGITAL\Documents\curso\django-admin startproject blog
+
+Rodar projeto (Dentro da pasta blog)
+= (venv) C:\Users\DIGITAL\Documents\curso>cd blog
+
+(venv) C:\Users\DIGITAL\Documents\curso\blog>python manage.py runserver
+
+Popular banco de dados (Criar tabela banco de dados)
+= (venv) C:\Users\DIGITAL\Documents\curso\blog>python manage.py migrate
+
+Criar superusuario
+(venv) C:\Users\DIGITAL\Documents\curso\blog>python manage.py createsuperuser
+
+Criar APP
+= (venv) C:\Users\DIGITAL\Documents\curso\blog>python manage.py startapp website
+
+Registrar novo modulo
+= (venv) C:\Users\DIGITAL\Documents\curso\blog>python manage.py makemigrations
+Aplicar modificação na tabela
+python manage.py migrate
+
+++ GIT ++
+C:\Users\DIGITAL\Documents\curso
+
+Criar Git repositorio (Dentro da pasta do projeto)
+= git init
+
+Mostrar historico de repositorio
+gi status
+
+Fazer um commit
+git add .
+git commit -m "First commit"
+git push origin master
+
+Add remote
+git remote add origin endereco
+git remote add origin h
+
