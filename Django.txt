@@ -83,8 +83,17 @@ Fazer um commit
 git add .
 git commit -m "First commit"
 git push origin master
+git push -u origin master (-u só na primeira vez)
 
 Add remote
 git remote add origin endereco
-git remote add origin h
+git remote add origin https://github.com/dimassilva/cursodjango3.git
 
+Listar Branch
+git branch -v
+
+=======
+Atualizar novo commit
+git add .
+git commit -m "First commit"
+git push origin master
